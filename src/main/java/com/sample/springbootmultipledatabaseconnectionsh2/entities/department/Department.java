@@ -1,4 +1,4 @@
-package com.sample.springbootmultipledatabaseconnectionsh2.entity;
+package com.sample.springbootmultipledatabaseconnectionsh2.entities.department;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

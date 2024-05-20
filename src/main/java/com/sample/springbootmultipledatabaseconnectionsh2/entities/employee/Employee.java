@@ -1,4 +1,4 @@
-package com.sample.springbootmultipledatabaseconnectionsh2.entity;
+package com.sample.springbootmultipledatabaseconnectionsh2.entities.employee;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,5 +1,6 @@
 package com.sample.springbootmultipledatabaseconnectionsh2.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,9 +18,9 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/api/employees")
-@AllArgsConstructor
 public class EmployeeController {
 
+	@Autowired
 	private EmployeeService employeeService;
 
 	@PostMapping

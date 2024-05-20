@@ -1,18 +1,17 @@
 package com.sample.springbootmultipledatabaseconnectionsh2.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sample.springbootmultipledatabaseconnectionsh2.dto.DepartmentDto;
-import com.sample.springbootmultipledatabaseconnectionsh2.entity.Department;
-import com.sample.springbootmultipledatabaseconnectionsh2.repository.DepartmentRepository;
+import com.sample.springbootmultipledatabaseconnectionsh2.entities.department.Department;
+import com.sample.springbootmultipledatabaseconnectionsh2.repositories.department.DepartmentRepository;
 import com.sample.springbootmultipledatabaseconnectionsh2.service.DepartmentService;
 
-import lombok.AllArgsConstructor;
-
 @Service
-@AllArgsConstructor
 public class DepartmentServiceImpl implements DepartmentService {
 
+	@Autowired
 	private DepartmentRepository departmentRepository;
 
 	@Override
